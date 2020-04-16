@@ -1,67 +1,100 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitigating Bias in Our Algorithms</title>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <title>Bias in Algorithms</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="blog.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> <!-- Bootstrap Classes-->
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img class="myBrand"src="assets/logo.PNG" alt="Our Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-responsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> 
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li
+                    <li class="nav-item"> 
+                        <a href="index.html#who" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="index.html#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item active"> 
+                        <a href="index.html#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="index.html#contact" class="nav-link">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container col-lg-12 main">
         <div class="col-lg-12 post">
             <div class="container">
 
-                <h2><a href="" class="ubuntu">Mitigating Bias in Our Algorithms</a></h2>
+                <h2><a class="ubuntu">Mitigating Bias in Algorithms</a></h2>
                 <div class="body-text">
 
                     <p class='text-muted ubuntu'>By Dylan Stetts | April 14, 2020</p>
                     <br>
                     <div class="row">
-                        <div class="col-lg-6">
-                            <p>Today, we use algorithms to do everything for us. From simple things like Netflix recommendations to risk assessments for expected recidivism, using computers to estimate human behavior is ingrained in our life. </p>
-                            <p>Many people think that there is less potential bias because there is no human making decisions. Is this truly the case?</p>
+                        <div class="col-lg-12">
+                            <p>Even if you don’t know what they are, you’ve almost certainly felt the impact of algorithms. Recommendations on Netflix, predictive recidivism rates, and even that uncomfortably ironic ad you saw from Purina when you ran out of cat food are all powered by algorithms.</p>
+                            <p>If you know what an algorithm is, you may not have realized the prominence of bias within algorithms – it’s a common misconception that algorithms are less bias than humans. Algorithms are modeled data used to preform predictive analysis. Let’s say you are looking to build an algorithm that models the risk of recidivism. Failing to realize the data in your model came from a time before civil rights <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">could make your model racist.</a></p>
                         </div>
-                        <div class="col-lg-6"><iframe class="video" width="560" height="315" align="middle" src="https://www.youtube.com/embed/59bMh59JQDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <iframe class="video" width="560" height="315" align="middle" src="https://www.youtube.com/embed/59bMh59JQDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
 
                     <br/>
                     <div class="row">
                         <div class="col-lg-12">
-                            <p><strong>The Morals of Algorithms</strong></p>
+                            <p><strong>The Importance of Recognizing Bias</strong></p>
                             <p>
-                                While “<a href="https://www-zdnet-com.cdn.ampproject.org/v/s/www.zdnet.com/google-amp/article/time-to-re-evaluate-ai-algorithms-right-from-the-design-stage-experts-urge/?usqp=mq331AQFKAGwASA%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.zdnet.com%2Farticle%2Ftime-to-re-evaluate-ai-algorithms-right-from-the-design-stage-experts-urge%2F">Algorithms by themselves</a> 
-                                don't have a moral character,” they inherently take on the values of those who develop them, or rather those who's data are modeled by the algorithm.
+                                As <a href="https://www.zdnet.com/article/time-to-re-evaluate-ai-algorithms-right-from-the-design-stage-experts-urge/">Aaron Roth</a>, a professor at the University of Pennsylvania, says, “the source of bad behavior [isn’t always] from a software engineer.” Sometimes it is based on historical stereotypes (latent bias). Maybe it happened because one group was overrepresented in the data, while another group was underrepresented (selection bias). It is possible that the bad behavior was learned from interacting with people (interaction bias). Knowing the source of bias is the first step in eliminating it. 
                             </p>
-                            <p> 
-                                As Google denotes, latent bias exists when preexisting stereotypes are modeled. This risk is twofold: not only is this bias harder to detect because it isn't coming from a human, but it is also more difficult to regulate. Essentially, we are allowing historical biases, like racism, work their way into our predictive software.
-                            </p>
+
                         </div>
                     </div>
                     <br/>
                     <div class="row">
                         <div class="col-lg-12">
-                            <p><strong>Removing Latent Bias</strong></p>
-                            <p></p></div>
-                    </div>
-                    <br/>
-                    <div class="row">
-                        <div class="col-lg-12"><p><strong>The Outcome is not Binary</strong></p>
-                            <p></p></div>
-                    </div>
-                    <br/>
-                    <div class="row">
-                        <div class="col-lg-12"><p><strong>Correcting Regulation</strong></p>
-                            <p></p>
-                            <p></p>
+                            <p><strong>Design with Bias in Mind</strong></p>
+                            <p>Eliminating bias isn’t always an easy task, as it is nearly impossible to make up for ignorance of sources of bias. However, one such way of mitigating it is through proper testing. An algorithm should reach as many different demographics as possible when designing anything that will have a social impact.</p>
+                            <p>With that, data scientists must ensure the diversity of their data. Oftentimes, it is impossible to ensure that an algorithm is completely diverse or account for every single person that will ever come into contact with it. Likewise, it is impossible to rewrite history and remove biases from the past. As Joy Buolamwini states in her <a href="https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms">TED Talk</a>, it is essential that we curate inclusively. </p>
                         </div>
                     </div>
                     <br/>
+                    <div class="row">
+                        <div class="col-lg-12 last"><p><strong>With Great Power…</strong></p>
+                            <p>The power of the internet extends beyond the accessibility to data. Algorithmic bias has the power to repress entire groups of people. If we do not understand the importance of identifying bias in algorithms, we as developers are practicing discrimination without knowing so. All data scientists and all developers of algorithms have a responsibility to ensure that their software has undergone adequate testing. In doing so, errors and biases won’t have unjust social impact.</p>
+                        </div>
+                    </div>
+                    <br/>
+
 
                 </div>
             </div>

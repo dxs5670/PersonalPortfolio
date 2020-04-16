@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
 
 html,body {
     height:100%;
@@ -32,7 +33,7 @@ html,body {
 }
 
 .carousel-caption h1 {
-    font-size: 500%;
+    font-size: 400%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px #000;
 }
@@ -45,7 +46,13 @@ html,body {
 }
 
 .carousel-caption button {
-    height: 3rem;
+    height: 2.75rem;
+}
+
+.carousel-indicators li{
+    border: 1px solid #000;
+    background-color: #272791;
+
 }
 
 .btn-primary {
@@ -62,6 +69,68 @@ html,body {
 .jumbotron {
     padding: 1rem;
     border-radius: 0;
+    background-color: #031417;
+}
+
+.type-wrap {
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#typed {
+    color: #39e9a6;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 200%;
+}
+.wrap {
+    margin-left: 10%;
+
+}
+
+/* code for animated blinking cursor */
+#typed-cursor {
+    font-size: 200%;
+    opacity: 1;
+    padding: 0 2px 0 2px;
+    margin-left: 3px;
+    background: #39e9a6;
+    color: #39e9a6;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; } }
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; } }
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; } }
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; } }
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; } }
+
+#resume-btn {
+    border-color: #39e9a6;
+    color: #39e9a6;
 }
 
 .padding {
@@ -105,10 +174,39 @@ html,body {
 }
 
 .gif {
-    max-width: 100%;
+    max-width: 16rem;
+    max-height: 16rem;
+}
+
+.squall {
+    padding-top: 3rem;
+}
+
+.card-img-top {
+    height: 12rem;
+    width: auto;
+    
+   
+}
+
+.blog-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.blog {
+    flex: 1;
 }
 
 
+
+.butt {
+    
+    text-align: center;
+
+}
 
 .social a {
     font-size: 4.5em;
@@ -156,14 +254,104 @@ hr.light {
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
+@media (max-width: 1280px) {
+    .carousel-caption {
+        position: absolute;
+        top: 40%;
+        transform: translateY(40%);
+    }
+    
+    .carousel-caption h1 {
+        font-size: 400%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 200%;
+        font-weight: 500;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+    }
+    
+    .carousel-caption button {
+        height: 2.75rem;
+    }
 }
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(40%);
+    }
+    
+    .carousel-caption h1 {
+        font-size: 200%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 100%;
+        font-weight: 500;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+    }
+    
+    .carousel-caption button {
+        height: 2.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        top: 30%;
+        transform: translateY(40%);
+    }
+    
+    .carousel-caption h1 {
+        font-size: 200%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 100%;
+        font-weight: 500;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+    }
+    
+    .carousel-caption button {
+        height: 2.75rem;
+    }
+}
+
 @media (max-width: 576px) {
-  
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        transform: translateY(40%);
+    }
+    
+    .carousel-caption h1 {
+        font-size: 200%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 100%;
+        font-weight: 500;
+        text-shadow: 1px 1px 10px #000;
+        padding-bottom: 1rem;
+    }
+    
+    .carousel-caption button {
+        height: 2.75rem;
+    }
 }
 
 
@@ -215,4 +403,15 @@ figure {
 .myBrand {
     max-width: 100px;
     transform: translateY(1.5rem);
+}
+
+
+
+@media (min-width: 1580px) {
+    .card-img-top {
+        height: 26rem;
+        width: auto;
+        
+       
+    }
 }

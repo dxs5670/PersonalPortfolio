@@ -14,7 +14,7 @@
 
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-
+    <script src="scripts/script.js"></script>
 
     
     <link rel="stylesheet" href="style.css">
@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> <!-- Bootstrap Classes-->
         <div class="container-fluid">
             <a href="#" class="navbar-brand"><img class="myBrand"src="assets/logo.PNG" alt="Our Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -71,8 +71,8 @@
                 <div class="carousel-caption">
                     <h1 class="display-2">Dylan Stetts</h1>
                     <h3>Software Designer</h3>
-                    <button type="button" class="btn btn-outline-light btn-lg">Woah!</button>
-                    <button type="button" class="btn btn-primary btn-large"> Check this out!</button>
+                    <a href="https://www.youtube.com/watch?v=5MgBikgcWnY"><button type="button" class="btn btn-primary btn-large">Learn Anything</button></a>
+                    <a href="https://www.youtube.com/watch?v=hqKafI7Amd8"><button type="button" class="btn btn-primary btn-large">What's Secure?</button></a>
                 </div> 
             </div>
 
@@ -93,15 +93,17 @@
         <div class="row jumbotron">
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
                 <!-- Section Contents -->
-                <p class="lead">
-                    So this is a little info about me... What do you think??
-                </p>
+                <div class="wrap">
+                    <div class="type-wrap">
+                        <span id="typed"></span>
+                    </div>
+                </div>
             </div>
 
             <!-- Dynamic size button -->
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
                 <a href=https://drive.google.com/file/d/1XnIorbctGa3omAOmVSJgHUf41txQ7s47/view?usp=sharing>
-                    <button class="btn btn-outline-secondary btn-lg" type="button">Check out my Resume!</button>
+                    <button id="resume-btn" class="btn btn-outline-secondary btn-lg" type="button">Check out my Resume!</button>
                 </a>
             </div>
         </div>
@@ -141,17 +143,17 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-code"></i>
                 <h3>Develop</h3>
-                <p>Designing apps with Mongo, Express, Node, Java and Python</p>
+                <p>Designing applications with Mongo, Express, Node, Java and Python</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-flask"></i>
                 <h3>Experiment</h3>
-                <p>Find new and innovative ways to use and build technologies</p>
+                <p>Finding new and innovative ways to use and build technologies</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-graduation-cap"></i>
                 <h3>Share</h3>
-                <p>Work with others to learn about new tech and share what I know</p>
+                <p>Working with others to learn about new tech and share what I know</p>
             </div>
         </div>
         <hr class="my-4">
@@ -170,9 +172,15 @@
                     If we all dedicate more time to learning, we can quickly master any craft.
                 </p>
                 <p>
-                    Knowledge, especially in the domain of technology, is so powerful. Let's do more together.
+                    Knowledge, especially in the domain of technology, is so powerful.
                 </p>
-                <a class="btn btn-primary" href="#">Learn With Me</a>
+                <p>
+                    When I'm not learning new languages, I'm researching how people interact with technology.
+                </p>
+                <p>
+                    It's easy to learn with other people. Let's do more together! 
+                </p>
+                <a class="btn btn-primary" href="https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3295800_code1328346.pdf?abstractid=3265913&mirid=1&type=2">Learn With Me</a>
             </div>
             <div class="col-md-12 col-lg-6">
                 <img class="img-fluid" src="assets/build.jpeg" alt="Build more together.">
@@ -187,32 +195,36 @@
     <figure>
         <div class="fixed-wrap">
             
-                <img id="fixed"src="assets/gif/hack.gif" alt="">
+            <img id="fixed"src="assets/gif/hack.gif" alt="">
             
         </div>
     </figure>
 
     <!-- Hidden Section -->
 
-    <button class="fun" data-toggle="collapse" data-target="#emoji">Click to reveal something</button>
+    <button class="fun" data-toggle="collapse" data-target="#emoji">Inspiration</button>
     <div class="collapse" id="emoji">
         <div class="container-fluid pading">
             <div class="row text-center">
 
                 <div class="col-sm-6 col-md-3">
-                    <img src="assets/gif/chicken.gif" alt="Chicken Emoji" class="gif">
+                    <img src="assets/8bitFox.png" alt="Chicken Emoji" class="gif">
+                    <p>"Fighting was the only thing I was good at, but at least I always fought for what I believed in.”</p>
                 </div>
 
                 <div class="col-sm-6 col-md-3">
-                    <img src="assets/gif/unicorn.gif" alt="Unicorn Emoji" class="gif">
+                    <img src="assets/8bitLink.jpg" alt="Unicorn Emoji" class="gif">
+                    <p>"A sword wields no strength unless the hands that holds it has courage."</p>
                 </div>
 
                 <div class="col-sm-6 col-md-3">
-                    <img src="assets/gif/poo.gif" alt="Poo Emoji" class="gif">
+                    <img src="assets/8bitSquall.PNG" alt="Poo Emoji" class="gif squall">
+                    <p>"There Is no good or bad side. Just two sides holding different views."</p>
                 </div>
 
                 <div class="col-sm-6 col-md-3">
-                    <img src="assets/gif/panda.gif" alt="Panda Emoji" class="gif">
+                    <img src="assets/solidus.PNG" alt="Panda Emoji" class="gif">
+                    <p>"Building the future and keeping the past alive are one and the same thing."</p>
                 </div>
 
             </div>
@@ -235,42 +247,48 @@
 
     <!-- Cards -->
     <div id="blog" class="container-fluid padding">
-          <div class="row padding">
+        <div class="blog-row row padding">
 
-              <div class="col-md-4">
-                  <div class="card">
-                      <img class="card-img-top" src="assets/fairness.jfif" alt="">
-                      <div class="card-body">
-                          <h4 class="card-title">Are Algorithms Bias?</h4>
-                          <p class="card-text">Just because the data says we are likely to be right doesn't mean we are.</p>
-                          <a href="blog1.html" class="btn btn-outline-secondary">Read more</a>
-                      </div>
-                  </div>
-              </div>
+            <div class="blog col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/fairness.jfif" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Bias in Algorithms</h4>
+                        <p class="card-text">The numbers aren't always right. To prevent an Orwellian reality, we must take control of our algorithms!</p>
+                        <div class="butt">
+                            <a href="blog1.html" class="blog-button btn btn-outline-secondary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-              <div class="col-md-4">
+            <div class="blog col-md-4">
                 <div class="card">
                     <img class="card-img-top" src="assets/privacy.png" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Where is my data going?</h4>
-                        <p class="card-text">By agreeing to the terms and conditions, compainies can show your data to whoever they want.</p>
-                        <a href="blog2.html" class="btn btn-outline-secondary">Read more</a>
+                        <h4 class="card-title">Do we value privacy?</h4>
+                        <p class="card-text">Companies can collect whatever data they want on us, but how much do they really know? Do we have any control?</p>
+                        <div class="butt">
+                            <a href="blog3.html" class="blog-button btn btn-outline-secondary">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="blog col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="assets/hardware.jpg" alt="">
+                    <img class="card-img-top" src="assets/innovation.jpg" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">COVID & Hardware</h4>
-                        <p class="card-text">Start buying now, before demand overtakes supply. Otherwise, you'll be paying more than what your processor is worth.</p>
-                        <a href="blog3.html" class="btn btn-outline-secondary">Read more</a>
+                        <h4 class="card-title">The War of Innovation</h4>
+                        <p class="card-text">China has been growing in science and technology at an unparalleled rate, but will they surpass America's dominance?</p>
+                        <div class="butt">
+                            <a href="blog2.html" class="blog-button btn btn-outline-secondary">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-          </div>
+        </div>
         <hr class="my4">      
     </div>
 
@@ -281,11 +299,15 @@
             <div class="col-lg-6">
                 <h2>My Aspirations</h2>
                 <p>
-                    I want to keep learning about new technologies and keep following my passions. 
+                    I want to keep learning about new technologies and keep following my passions. One of my goals is to become a fulll-stack web developer. I'm almost there! 
+                </p>
+                <p>
+                    I want to learn more about computers at the hardware level. Electricity and magnetism are keys to our advancement!
+                    If I had to dedicate my studies to one thing, it would be electrical engineering. For right now, its just a hobby.
                 </p>
                 <p>
                     Ideally, I want to explore data science. While I haven't had the chance to work with big data sets, I have the 
-                    perception needed to notice trends in data.
+                    perception needed to notice trends in big data. I wish I would've had the chance to compete for "The Netflix Prize!"
                 </p>
                 <p>
                     Nothing would be cooler than the opportunity to build Artificial Intelligence.
@@ -320,31 +342,34 @@
         <div class="container-fluid padding">
             <div class="row text-center">
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <img class="logo2" src="assets/logo.PNG" alt="dat me">
                     <hr id="move-up" class="light">
                     <p id="move-up">(570) 337-9102</p>
                     <p id="move-up">dstetts@comcast.net</p>
-                    <p id="move-up">Pennsylvania</p>
-                    <p id="move-up">City, State, Zip</p>
+                    <p id="move-up">State College, PA, 16803</p>
                 </div>
             
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Hours</h5>
-                    <hr class="light">
-                    <p>MWF: 10am-8pm</p>
-                    <p>T, TH: 11am-7pm</p>
-                    <p>Sat: Grind Never Stops</p>
-                </div>
 
-                <div class="col-md-4">
+
+                <div class="col-md-6">
                     <hr class="light">
-                    <h5>Hours</h5>
+                    <h5>Want to leave me a message?</h5>
                     <hr class="light">
-                    <p>MWF: 10am-8pm</p>
-                    <p>T, TH: 11am-7pm</p>
-                    <p>Sat: Grind Never Stops</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="user@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Type your message here</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
 
                 <div class="col-12">
